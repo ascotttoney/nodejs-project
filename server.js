@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', urlEncodedParser, (req, res) => {
-  console.log(req.body)
   res.render('welcome', {user: req.body})
 })
 

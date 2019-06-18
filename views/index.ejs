@@ -1,20 +1,36 @@
-<div id='greeting-and-form'>
-  <span class='hello'>
-    hello!
-  </span>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Devin's Challenge</title>
+    <link href='/assets/style.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200,200i,300,300i,400,400i,700,700i&display=swap' rel='stylesheet'>
+    <script src='/assets/index.js'></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
 
-    <br>
+  <body class='container'>
+    <div id='greeting-and-form'>
+      <span class='hello'>
+        hello!
+      </span>
 
-  <span class='please'>
-    Please enter your first name, last name, and favorite band or artist below.
-  </span>
+        <br>
 
-    <br><br><br>
+      <span class='please'>
+        Please enter your first name, last name, and favorite band or artist below.
+      </span>
 
-  <form id='new-user-form' method='post' action='/'>
-    <input class='form-field' type='text' name='first_name' placeholder='first name'> <br>
-    <input class='form-field' type='text' name='last_name' placeholder='last name'> <br>
-    <input class='form-field' type='text' name='favorite' placeholder='favorite band or artist'> <br><br>
-    <button data-id='' type='submit'>Submit</button>
-  </form>
-</div>
+        <br><br><br>
+
+      <form enctype='application/json' id='new-user-form' method='post' action='/'>
+        <input class='form-field' type='text' name='first_name' placeholder='first name'> <br>
+        <input class='form-field' type='text' name='last_name' placeholder='last name'> <br>
+        <input class='form-field' type='text' name='favorite' placeholder='favorite band or artist'> <br><br>
+        <button type='submit'>Submit</button>
+      </form>
+    </div>
+  </body>
+
+</html>
