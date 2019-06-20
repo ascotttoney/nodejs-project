@@ -1,4 +1,4 @@
-<html lang='en'>
+<html>
   <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -9,22 +9,26 @@
     <script src='/assets/index.js'></script>
   </head>
 
-  <body class='container'>
-    <div id='new-user-greeting'> 
+  <body>
+  
+    <div id='container-2'>
+      <div id='new-user-greeting'> 
 
-      <span class='line-1'>
-        Good (morning/afternoon/evening), Mr. (last name)!
-      </span>
-        <br>
-      <span class='line-2'>
-        The time is now XX:XX
-      </span>
+        <span class='line-1'>
+          Good <%=time%>, Mr. <%=name%>!
+        </span>
+          <br>
+        <span class='line-2'>
+          The time is now <%=strTime%>
+        </span>
 
-      <p class='line-3'>
-        Put on some (insert favorite band here) and have a great day.
-      </p>
-
+        <p class='line-3'>
+          Put on some <%=favorite%> and have a great day.
+        </p>
+      </div>
     </div>
+  
   </body>
+
 
 </html>

@@ -7,30 +7,34 @@
     <link href='/assets/style.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200,200i,300,300i,400,400i,700,700i&display=swap' rel='stylesheet'>
     <script src='/assets/index.js'></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
-  <body class='container'>
-    <div id='greeting-and-form'>
-      <span class='hello'>
-        hello!
-      </span>
+  <body>
 
-        <br>
+    <div id='container-1'>
+      <div id='greeting-and-form'>
 
-      <span class='please'>
-        Please enter your first name, last name, and favorite band or artist below.
-      </span>
+        <span class='hello'>
+          hello!
+        </span>
 
-        <br><br><br>
+          <br>
 
-      <form enctype='application/json' id='new-user-form' method='post' action='/'>
-        <input class='form-field' type='text' name='first_name' placeholder='first name'> <br>
-        <input class='form-field' type='text' name='last_name' placeholder='last name'> <br>
-        <input class='form-field' type='text' name='favorite' placeholder='favorite band or artist'> <br><br>
-        <button type='submit'>Submit</button>
-      </form>
+        <span class='please'>
+          Please enter your last name and your favorite band or artist.
+        </span>
+
+          <br><br><br>
+
+        <form id='new-user-form' method='post' action='/'>
+          <input class='form-field' type='text' name='lastName' placeholder='last name'> <br>
+          <input class='form-field' type='text' name='favorite' placeholder='favorite band or artist'> <br><br>
+          <button type='submit'>Submit</button>
+        </form>
+        
+      </div>
     </div>
+    
   </body>
 
 </html>
