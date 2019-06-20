@@ -37,7 +37,6 @@ app.locals.time = time
 // --- ROUTING --- //
 
 app.get('/greeting', (req, res) => {
-  // console.log(req.query)
   res.send(`Good ${time}, Mr. ${req.query.name}!\nThe time is now ${strTime}.\nPut on some ${req.query.favorite} and have a great day. \n\n `)
 })
 
@@ -46,7 +45,6 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', urlEncodedParser, (req, res) => {
-  // console.log(req.body)
   app.locals.name = req.body.lastName
   app.locals.favorite = req.body.favorite
   res.render('greeting', {user: req.body})
