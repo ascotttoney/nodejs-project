@@ -37,7 +37,8 @@ app.locals.time = time
 // --- ROUTING --- //
 
 app.get('/greeting', (req, res) => {
-  res.send(`Good ${time}, Mr. ${req.query.name}!\nThe time is now ${strTime}.\nPut on some ${req.query.favorite} and have a great day. \n\n `)
+  if (time === 'morning') res.send(`good ${time}, ${req.query.firstName}! \n\n `)
+  else res.send(`good ${time}, Mr. ${req.query.lastName} \n\n `)
 })
 
 app.get('/', (req, res) => {
